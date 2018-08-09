@@ -1,8 +1,5 @@
 defmodule PhsandWeb do
   @moduledoc """
-  The entrypoint for defining your web interface, such
-  as controllers, views, channels and so on.
-
   This can be used in your application as:
 
       use PhsandWeb, :controller
@@ -26,20 +23,6 @@ defmodule PhsandWeb do
     end
   end
 
-  def view do
-    quote do
-      use Phoenix.View, root: "lib/phsand_web/templates",
-                        namespace: PhsandWeb
-
-      # Import convenience functions from controllers
-      import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
-
-      import PhsandWeb.Router.Helpers
-      import PhsandWeb.ErrorHelpers
-      import PhsandWeb.Gettext
-    end
-  end
-
   def router do
     quote do
       use Phoenix.Router
@@ -55,9 +38,6 @@ defmodule PhsandWeb do
     end
   end
 
-  @doc """
-  When used, dispatch to the appropriate controller/view/etc.
-  """
   defmacro __using__(which) when is_atom(which) do
     apply(__MODULE__, which, [])
   end
