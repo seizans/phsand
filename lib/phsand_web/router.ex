@@ -7,5 +7,7 @@ defmodule PhsandWeb.Router do
 
   scope "/api", PhsandWeb do
     pipe_through :api
+
+    post "/hello", HelloController, :hello1
   end
 end
