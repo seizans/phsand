@@ -8,12 +8,3 @@ config :phsand, PhsandWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :phsand, Phsand.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "phsand_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
