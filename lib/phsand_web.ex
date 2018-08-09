@@ -19,7 +19,6 @@ defmodule PhsandWeb do
       use Phoenix.Controller, namespace: PhsandWeb
       import Plug.Conn
       import PhsandWeb.Router.Helpers
-      import PhsandWeb.Gettext
     end
   end
 
@@ -34,7 +33,6 @@ defmodule PhsandWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import PhsandWeb.Gettext
     end
   end
 
