@@ -27,7 +27,6 @@ defmodule Phsand.Mixfile do
   defp deps do
     [
       {:phoenix, "~> 1.3.4"},
-      {:phoenix_pubsub, "~> 1.0"},
       {:cowboy, "~> 1.0"}
     ]
   end
